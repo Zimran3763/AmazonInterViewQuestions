@@ -35,6 +35,8 @@ namespace Amazon
         {
             
             // To store reverse of given map 
+            //Change key to value and value to key
+            // this will put all city in the key accept the first one.
             Hashtable reverseMap = new Hashtable();
             // To fill reverse map, iterate through the given map 
             foreach (string key in dataSet.Keys)
