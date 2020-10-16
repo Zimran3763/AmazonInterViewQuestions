@@ -87,7 +87,9 @@ namespace Amazon
             CourseTaken.FindOrder(numCourses, prerequisites);
             #endregion
 
-            TwoSum.
+            int[] nums = { 2, 7, 11, 15 };
+            int target = 9;
+            var resultArray = TwoSum.TwoSumIndex(nums, target);
         }
     }
 }
