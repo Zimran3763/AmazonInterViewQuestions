@@ -1,12 +1,18 @@
 ﻿using System;
+using System.Collections.Generic;
+/*
+There are a total of n courses you have to take labelled from 0 to n - 1.
+Some courses may have prerequisites, for example, if prerequisites[i] = [ai, bi] this means you must take the course bi before the course ai.
+Given the total number of courses numCourses and a list of the prerequisite pairs, return the ordering of courses you should take to finish all courses.
+If there are many valid answers, return any of them. If it is impossible to finish all courses, return an empty array.
+ */
 namespace Amazon
 {
-
     public class CourseTaken
     {
-        private int[] _result;
-        private int resultIndex = 0;
-        public int[] FindOrder(int numCourses, int[][] prerequisites)
+        private static int[] _result;
+        private static int resultIndex = 0;
+        public static int[] FindOrder(int numCourses, int[][] prerequisites)
         {
             _result = new int[numCourses];
 
@@ -30,15 +36,18 @@ namespace Amazon
 
             for (int i = 0; i < numCourses; i++)
             {
-                if (isAdded[i]) continue;
+                
+                if (isAdded[i]) 
+                    continue;
                 var noCyclic = DFS(i, adjacencyMatrix, isVisited, isAdded);
-                if (!noCyclic) return new int[0];
+                if (!noCyclic) 
+                    return new int[0];
             }
 
             return _result;
         }
 
-        private bool DFS(int cur, HashSet<int>[] adjacencyMatrix, bool[] isVisited, bool[] isAdded)
+        private static bool DFS(int cur, HashSet<int>[] adjacencyMatrix, bool[] isVisited, bool[] isAdded)
         {
             if (isVisited[cur]) return false;
 
