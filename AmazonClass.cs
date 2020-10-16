@@ -1,4 +1,5 @@
 ﻿using Amazon;
+using ArraysStrings;
 using System;
 using System.Collections;
 using System.Collections.Generic;
@@ -71,7 +72,9 @@ namespace Amazon
             dataSet.Add("Delhi", "Goa");
 
             PrintItinerary.printResult(dataSet);
+            #endregion
 
+            #region PrerequisitCourses
             int numCourses = 4;
             int[][] prerequisites = new int[][]
             {
@@ -83,6 +86,8 @@ namespace Amazon
             };
             CourseTaken.FindOrder(numCourses, prerequisites);
             #endregion
+
+            TwoSum.
         }
     }
 }
