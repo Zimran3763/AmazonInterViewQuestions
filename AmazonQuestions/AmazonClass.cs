@@ -1,10 +1,10 @@
-﻿using System;
+﻿using Amazon;
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-using InterviewCakeConsoleApp;
 
 namespace Amazon
 {
@@ -13,11 +13,11 @@ namespace Amazon
         public static void Main(string[] args)
         {
             #region Tree from PreOrder and InOrder
-            int[] preOrder = new int[] { 1,2,4,5,3};
-            int[] inOrder = new int[] { 4,2,5,1,3};
-            int endIndex = preOrder.Length -1;
+            int[] preOrder = new int[] { 1, 2, 4, 5, 3 };
+            int[] inOrder = new int[] { 4, 2, 5, 1, 3 };
+            int endIndex = preOrder.Length - 1;
             int startIndex = 0;
-            TreefromPreOrdeInOrder.buildTree(preOrder, inOrder, startIndex, endIndex );
+            TreefromPreOrdeInOrder.buildTree(preOrder, inOrder, startIndex, endIndex);
             #endregion
 
             #region Max Path Sum Binary Tree
@@ -39,31 +39,31 @@ namespace Amazon
             #endregion
 
             #region Graph is Tree
-            Graph g1 = new Graph(5); 
-            g1.addEdge(1, 0); 
-            g1.addEdge(0, 2); 
-            g1.addEdge(0, 3); 
-            g1.addEdge(3, 4); 
-            if (g1.isTree()) 
-                Console.WriteLine("Graph is Tree"); 
+            Graph g1 = new Graph(5);
+            g1.addEdge(1, 0);
+            g1.addEdge(0, 2);
+            g1.addEdge(0, 3);
+            g1.addEdge(3, 4);
+            if (g1.isTree())
+                Console.WriteLine("Graph is Tree");
             else
-                Console.WriteLine("Graph is not Tree"); 
-  
-            Graph g2 = new Graph(5); 
-            g2.addEdge(1, 0); 
-            g2.addEdge(0, 2); 
-            g2.addEdge(2, 1); 
-            g2.addEdge(0, 3); 
-            g2.addEdge(3, 4); 
-  
-            if (g2.isTree()) 
-                Console.WriteLine("Graph is Tree"); 
+                Console.WriteLine("Graph is not Tree");
+
+            Graph g2 = new Graph(5);
+            g2.addEdge(1, 0);
+            g2.addEdge(0, 2);
+            g2.addEdge(2, 1);
+            g2.addEdge(0, 3);
+            g2.addEdge(3, 4);
+
+            if (g2.isTree())
+                Console.WriteLine("Graph is Tree");
             else
                 Console.WriteLine("Graph is not Tree");
             #endregion
 
             #region given Itenrary
-            
+
             Hashtable dataSet = new Hashtable();
             dataSet.Add("Chennai", "Banglore");
             dataSet.Add("Bombay", "Delhi");
@@ -73,10 +73,16 @@ namespace Amazon
             PrintItinerary.printResult(dataSet);
 
             int numCourses = 4;
-            int[][] prerequisites = new int[][]{(1,0),(2,0),(3,1),(3,2)};
-            CourseTaken.FindOrder(numCourses,prerequisites);
+            int[][] prerequisites = new int[][]
+            {
+                new int[]{ 1, 0 },
+                new int[]{ 1, 0 },
+                new int[]{ 2, 0 },
+                new int[]{ 3, 1 },
+                new int[]{ 3, 2 }
+            };
+            CourseTaken.FindOrder(numCourses, prerequisites);
             #endregion
         }
-
     }
 }
