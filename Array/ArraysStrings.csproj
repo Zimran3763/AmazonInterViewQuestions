@@ -7,8 +7,8 @@
     <ProjectGuid>{B6DF6764-5F0B-4040-81CC-B251E4768CA1}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>Array</RootNamespace>
-    <AssemblyName>Array</AssemblyName>
+    <RootNamespace>ArraysStrings</RootNamespace>
+    <AssemblyName>ArraysStrings</AssemblyName>
     <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <Deterministic>true</Deterministic>
@@ -42,6 +42,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="LongestPalindrom.cs" />
+    <Compile Include="MostCommonWord.cs" />
     <Compile Include="ThreeSum.cs" />
     <Compile Include="TwoSum.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />

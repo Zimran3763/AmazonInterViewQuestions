@@ -101,8 +101,18 @@ namespace Amazon
 
             #region Longest Palindrom
             string s = "iababrabcbazmabccbaxyz";
-             LongestPalindrom.longestPalindromicSubstring(s);
+            LongestPalindrom.longestPalindromicSubstring(s);
+            #endregion
+
+            #region Most Common Word
+            //string paragraph = "Bob hit a ball, the hit BALL flew far after it was hit.";
+            string paragraph = "a.";
+            string [] banned = { "a"};
+
+
+            MostCommonWord.mostCommonWordSubstring(paragraph, banned);
             #endregion
         }
+        
     }
 }
