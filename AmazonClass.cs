@@ -98,6 +98,11 @@ namespace Amazon
             
             var resArray = ThreeSum.ThreeSumArray(numsArray);
             #endregion
+
+            #region Longest Palindrom
+            string s = "iababrabcbazmabccbaxyz";
+             LongestPalindrom.longestPalindromicSubstring(s);
+            #endregion
         }
     }
 }
