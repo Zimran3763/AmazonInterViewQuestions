@@ -109,10 +109,14 @@ namespace Amazon
             string paragraph = "a.";
             string [] banned = { "a"};
 
-
             MostCommonWord.mostCommonWordSubstring(paragraph, banned);
             #endregion
+
+            #region Integer equivalent string
+            int numArray = 9;
+            IntegerToItsEnglishWord.numberToWords(numArray);
+            #endregion
         }
-        
+
     }
 }

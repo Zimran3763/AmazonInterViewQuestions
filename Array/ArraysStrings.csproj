@@ -41,6 +41,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="IntegerToItsEnglishWord.cs" />
     <Compile Include="LongestPalindrom.cs" />
     <Compile Include="MostCommonWord.cs" />
     <Compile Include="ThreeSum.cs" />
