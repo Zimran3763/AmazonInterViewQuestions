@@ -122,6 +122,14 @@ namespace Amazon
             string searchWord = "mouse";
             SearchSuggestionsSystem.SuggestedProducts(products, searchWord);
             #endregion
+
+            #region Most Common Word
+            //string paragraph = "Bob hit a ball, the hit BALL flew far after it was hit.";
+            string comments = "I wish my Kindle had even more storage\",\"I wish the battery life on my Kindle lasted 2 years\", \"I read in the bath and would enjoy a waterproof Kindle\",\"I want to take my Kindle into the hover. Waterproof please waterproof!\", \"It would be neat if my Kindle would hover on my desk when not in use\",\"How cool would it be if my Kindle charged in the sun via solar power?";
+            string[] possibleFeatures = { "storage", "battery", "hover", "alexa", "waterproof", "solar" };
+
+            PossibleFeatures.possibleFeaturesInComment(comments, possibleFeatures);
+            #endregion
         }
 
     }
