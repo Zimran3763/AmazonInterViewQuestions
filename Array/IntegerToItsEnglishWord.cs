@@ -39,13 +39,13 @@ namespace ArraysStrings
             if (num == 0)
                 return "";
             //add space at the end beacuse if it's bigger than 1000 than we need space btween words
-            //get last digit in word
+            //get last digit in word which 7 in 867
             else if (num < 20)
                 return LESS_THAN_20[num] + " ";
-            //get hundred digit in word
+            //get hundred digit in word six in (67/10 = 6) and call helper function to get 7
             else if (num < 100)
                 return TENS[num / 10] + " " + Helper(num % 10);
-            //get a first digit in hundred like in 867 eight and append hundred and get 67 by calling helper again
+            //get a first digit in hundred like in 867 (867/1000 = 8), eight and append hundred and get 67 by calling helper again
             else
                 return LESS_THAN_20[num / 100] + " Hundred " + Helper(num % 100);
         

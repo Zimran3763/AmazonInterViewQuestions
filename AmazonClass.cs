@@ -116,6 +116,12 @@ namespace Amazon
             int numArray = 9;
             IntegerToItsEnglishWord.numberToWords(numArray);
             #endregion
+
+            #region Search Suggestions System
+            string[] products = { "mobile", "mouse", "moneypot", "monitor", "mousepad" };
+            string searchWord = "mouse";
+            SearchSuggestionsSystem.SuggestedProducts(products, searchWord);
+            #endregion
         }
 
     }
