@@ -7,6 +7,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Amazon", "Amazon.csproj", "
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ArraysStrings", "Array\ArraysStrings.csproj", "{B6DF6764-5F0B-4040-81CC-B251E4768CA1}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LinkedLists", "LinkedLists\LinkedLists.csproj", "{FB896C78-2128-4DA5-8451-5EDFF062E39B}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -21,6 +23,10 @@ Global
 		{B6DF6764-5F0B-4040-81CC-B251E4768CA1}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{B6DF6764-5F0B-4040-81CC-B251E4768CA1}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{B6DF6764-5F0B-4040-81CC-B251E4768CA1}.Release|Any CPU.Build.0 = Release|Any CPU
+		{FB896C78-2128-4DA5-8451-5EDFF062E39B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FB896C78-2128-4DA5-8451-5EDFF062E39B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FB896C78-2128-4DA5-8451-5EDFF062E39B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FB896C78-2128-4DA5-8451-5EDFF062E39B}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

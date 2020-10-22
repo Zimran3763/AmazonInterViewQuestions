@@ -1,5 +1,6 @@
 ﻿using Amazon;
 using ArraysStrings;
+using LinkedLists;
 using System;
 using System.Collections;
 using System.Collections.Generic;
@@ -129,6 +130,16 @@ namespace Amazon
             string[] possibleFeatures = { "storage", "battery", "hover", "alexa", "waterproof", "solar" };
 
             PossibleFeatures.possibleFeaturesInComment(comments, possibleFeatures);
+            #endregion
+
+            #region Reverse Nodes in k-Group
+            var a = new SinglyLinkedList(1);
+            a.Next = new SinglyLinkedList(2);
+            a.Next.Next = new SinglyLinkedList(3);
+            a.Next.Next.Next = new SinglyLinkedList(4);
+            a.Next.Next.Next.Next = new SinglyLinkedList(5);
+            int k = 2;
+            ReverseNodesInKGroup.ReverseKGroup(a,k);
             #endregion
         }
 
