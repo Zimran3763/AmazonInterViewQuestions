@@ -138,7 +138,10 @@ namespace Amazon
             a.Next.Next = new SinglyLinkedList(3);
             a.Next.Next.Next = new SinglyLinkedList(4);
             a.Next.Next.Next.Next = new SinglyLinkedList(5);
-            int k = 2;
+            a.Next.Next.Next.Next.Next = new SinglyLinkedList(6);
+            a.Next.Next.Next.Next.Next.Next = new SinglyLinkedList(7);
+            a.Next.Next.Next.Next.Next.Next.Next = new SinglyLinkedList(8);
+            int k = 3;
             ReverseNodesInKGroup.ReverseKGroup(a,k);
             #endregion
         }
