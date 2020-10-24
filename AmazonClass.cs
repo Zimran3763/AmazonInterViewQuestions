@@ -144,6 +144,17 @@ namespace Amazon
             int k = 3;
             ReverseNodesInKGroup.ReverseKGroup(a,k);
             #endregion
+
+            #region merge two lists
+            var l1 = new SinglyLinkedList(1);
+            l1.Next = new SinglyLinkedList(2);
+            l1.Next.Next = new SinglyLinkedList(4);
+
+            var l2 = new SinglyLinkedList(1);
+            l2.Next = new SinglyLinkedList(3);
+            l2.Next.Next = new SinglyLinkedList(4);
+            MergeTwoSortedLists.MergeList(l1, l2);
+            #endregion
         }
 
     }
