@@ -10,10 +10,12 @@ namespace LinkedLists
     {
         public int Value { get; set; }
         public SinglyLinkedList Next { get; set; }
+        public SinglyLinkedList RandomPointer { get; set; }
         public SinglyLinkedList(int val)
         {
             Value = val;
             Next = null;
+            RandomPointer = null;
         }
     }
 }

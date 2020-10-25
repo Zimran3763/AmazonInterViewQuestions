@@ -176,6 +176,22 @@ namespace Amazon
 
             MergeKSortedLists.MergeKLists(arr);
             #endregion
+
+            #region Clone linked list with random pointer
+            var listWithRandom = new SinglyLinkedList(1);
+            listWithRandom.Next = new SinglyLinkedList(2);
+            listWithRandom.Next.Next = new SinglyLinkedList(3);
+            listWithRandom.Next.Next.Next = new SinglyLinkedList(4);
+            listWithRandom.Next.Next.Next.Next = new SinglyLinkedList(5);
+
+            // Setting up random references. 
+            listWithRandom.RandomPointer = listWithRandom.Next.Next;
+            listWithRandom.Next.RandomPointer = listWithRandom.Next.Next.Next;
+            listWithRandom.Next.Next.RandomPointer = listWithRandom.Next.Next.Next.Next;
+            listWithRandom.Next.Next.Next.RandomPointer = listWithRandom.Next.Next.Next.Next.Next;
+            listWithRandom.Next.Next.Next.Next.RandomPointer = listWithRandom.Next;
+            CopyListWithRandomPointer.CopyRandomList(listWithRandom);
+            #endregion
         }
 
     }
