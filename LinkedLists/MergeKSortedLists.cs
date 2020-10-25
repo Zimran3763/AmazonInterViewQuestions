@@ -11,7 +11,7 @@ namespace LinkedLists
 {
     public class MergeKSortedLists
     {       
-        public SinglyLinkedList MergeKLists(SinglyLinkedList [] lists)
+        public static SinglyLinkedList MergeKLists(SinglyLinkedList [] lists)
         {
             if (lists.Length == 1)
                 return lists[0];

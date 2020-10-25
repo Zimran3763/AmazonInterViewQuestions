@@ -155,6 +155,27 @@ namespace Amazon
             l2.Next.Next = new SinglyLinkedList(4);
             MergeTwoSortedLists.MergeList(l1, l2);
             #endregion
+
+            #region merge k linked lists
+            SinglyLinkedList[] arr = new SinglyLinkedList[k];
+
+            arr[0] = new SinglyLinkedList(1);
+            arr[0].Next = new SinglyLinkedList(3);
+            arr[0].Next.Next = new SinglyLinkedList(5);
+            arr[0].Next.Next.Next = new SinglyLinkedList(7);
+
+            arr[1] = new SinglyLinkedList(2);
+            arr[1].Next = new SinglyLinkedList(4);
+            arr[1].Next.Next = new SinglyLinkedList(6);
+            arr[1].Next.Next.Next = new SinglyLinkedList(8);
+
+            arr[2] = new SinglyLinkedList(0);
+            arr[2].Next = new SinglyLinkedList(9);
+            arr[2].Next.Next = new SinglyLinkedList(10);
+            arr[2].Next.Next.Next = new SinglyLinkedList(11);
+
+            MergeKSortedLists.MergeKLists(arr);
+            #endregion
         }
 
     }
