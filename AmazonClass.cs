@@ -192,6 +192,14 @@ namespace Amazon
             listWithRandom.Next.Next.Next.Next.RandomPointer = listWithRandom.Next;
             CopyListWithRandomPointer.CopyRandomList(listWithRandom);
             #endregion
+
+            #region Sort An Array (Quick Sort)
+            int[] arry = { 1,5,4,11,20,8,2,98,90,16};
+            int n = arry.Length-1;
+            SortAnArrayQuickSort.QuickSort(arry, 0, n );
+            Console.WriteLine("sorted array ");
+            #endregion
+
         }
 
     }
