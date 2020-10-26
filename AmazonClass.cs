@@ -200,6 +200,17 @@ namespace Amazon
             Console.WriteLine("sorted array ");
             #endregion
 
+            #region Number Of Island
+            char[][] islandArray = new char[][]
+            {
+                new char[]{ '1', '1', '1', '1', '0' },
+                new char[]{ '1', '1', '0', '1', '0' },
+                new char[]{ '1', '1', '0', '0', '0' },
+                new char[]{ '0', '0', '0', '0', '0' }
+            };
+            NumberOfIslands.NumIslands(islandArray);
+            #endregion
+
         }
 
     }
