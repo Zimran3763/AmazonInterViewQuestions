@@ -4,17 +4,16 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{89B1A6EF-213C-4C58-9BBF-3EF1096A0F4F}</ProjectGuid>
-    <OutputType>Exe</OutputType>
-    <RootNamespace>AmazonQuestions</RootNamespace>
-    <AssemblyName>AmazonQuestions</AssemblyName>
+    <ProjectGuid>{8C905917-A97D-4E19-9586-BE6790AAEF57}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>StackQueues</RootNamespace>
+    <AssemblyName>StackQueues</AssemblyName>
     <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
-    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
     <Deterministic>true</Deterministic>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
-    <PlatformTarget>AnyCPU</PlatformTarget>
     <DebugSymbols>true</DebugSymbols>
     <DebugType>full</DebugType>
     <Optimize>false</Optimize>
@@ -24,7 +23,6 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
-    <PlatformTarget>AnyCPU</PlatformTarget>
     <DebugType>pdbonly</DebugType>
     <Optimize>true</Optimize>
     <OutputPath>bin\Release\</OutputPath>
@@ -43,36 +41,8 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="AmazonClass.cs" />
-    <Compile Include="CourseTaken.cs" />
-    <Compile Include="Graph.cs" />
-    <Compile Include="GraphIsTree.cs" />
-    <Compile Include="MaximumPathSumBinaryTree.cs" />
-    <Compile Include="PrintItinerary.cs" />
+    <Compile Include="MinStack.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="SerializeandDeserializeBinaryTree.cs" />
-    <Compile Include="TreefromPreOrdeInOrder.cs" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="App.config" />
-  </ItemGroup>
-  <ItemGroup>
-    <ProjectReference Include="Array\ArraysStrings.csproj">
-      <Project>{b6df6764-5f0b-4040-81cc-b251e4768ca1}</Project>
-      <Name>ArraysStrings</Name>
-    </ProjectReference>
-    <ProjectReference Include="LinkedLists\LinkedLists.csproj">
-      <Project>{fb896c78-2128-4da5-8451-5edff062e39b}</Project>
-      <Name>LinkedLists</Name>
-    </ProjectReference>
-    <ProjectReference Include="SearchSort\SearchSort.csproj">
-      <Project>{b5cc2c88-7a18-4132-804c-501afd3d0d7f}</Project>
-      <Name>SearchSort</Name>
-    </ProjectReference>
-    <ProjectReference Include="StackQueues\StackQueues.csproj">
-      <Project>{8c905917-a97d-4e19-9586-be6790aaef57}</Project>
-      <Name>StackQueues</Name>
-    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

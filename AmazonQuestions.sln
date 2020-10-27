@@ -11,6 +11,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LinkedLists", "LinkedLists\
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SearchSort", "SearchSort\SearchSort.csproj", "{B5CC2C88-7A18-4132-804C-501AFD3D0D7F}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "StackQueues", "StackQueues\StackQueues.csproj", "{8C905917-A97D-4E19-9586-BE6790AAEF57}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -33,6 +35,10 @@ Global
 		{B5CC2C88-7A18-4132-804C-501AFD3D0D7F}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{B5CC2C88-7A18-4132-804C-501AFD3D0D7F}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{B5CC2C88-7A18-4132-804C-501AFD3D0D7F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8C905917-A97D-4E19-9586-BE6790AAEF57}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8C905917-A97D-4E19-9586-BE6790AAEF57}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8C905917-A97D-4E19-9586-BE6790AAEF57}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8C905917-A97D-4E19-9586-BE6790AAEF57}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
