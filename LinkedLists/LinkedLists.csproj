@@ -42,14 +42,11 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="CopyListWithRandomPointer.cs" />
-    <Compile Include="MeetingRooms.cs" />
     <Compile Include="MergeKSortedLists.cs" />
     <Compile Include="MergeTwoSortedLists.cs" />
-    <Compile Include="NumberOfIslands.cs" />
     <Compile Include="ReverseNodesInKGroup.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="SinglyLinkedList.cs" />
-    <Compile Include="SortAnArrayQuickSort.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
