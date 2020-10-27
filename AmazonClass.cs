@@ -211,6 +211,17 @@ namespace Amazon
             NumberOfIslands.NumIslands(islandArray);
             #endregion
 
+            #region Meeting rooms
+            List<Meeting> meetings = new List<Meeting>
+            {
+             new Meeting(0,4),
+             new Meeting(5,10),
+             new Meeting(15,20)
+            
+            };
+            MeetingRooms.MergeRanges(meetings);
+            #endregion
+
         }
 
     }

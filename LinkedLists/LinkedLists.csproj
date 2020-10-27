@@ -42,6 +42,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="CopyListWithRandomPointer.cs" />
+    <Compile Include="MeetingRooms.cs" />
     <Compile Include="MergeKSortedLists.cs" />
     <Compile Include="MergeTwoSortedLists.cs" />
     <Compile Include="NumberOfIslands.cs" />
