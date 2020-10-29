@@ -2,6 +2,7 @@
 using ArraysStrings;
 using SearchSort;
 using LinkedLists;
+using HashTable;
 using System;
 using System.Collections;
 using System.Collections.Generic;
@@ -222,6 +223,8 @@ namespace Amazon
             };
             MeetingRooms.MergeRanges(meetings);
             #endregion
+
+            #region Search in two d matrix
             int[,] matrix = new int[5,5]
             {
                 { 1,  4,  7,  11, 15 },
@@ -232,6 +235,12 @@ namespace Amazon
             };
 
             SearchInTwoDMatrix.SearchMatrix(matrix, 17);
+            #endregion
+
+            #region Trap rain water
+            int[] height = new int[] { 0, 1, 0, 2, 1, 0, 1, 3, 2, 1, 2, 1 };
+            TrappingRainWater.Trap(height);
+            #endregion
         }
 
     }

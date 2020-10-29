@@ -13,6 +13,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SearchSort", "SearchSort\Se
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "StackQueues", "StackQueues\StackQueues.csproj", "{8C905917-A97D-4E19-9586-BE6790AAEF57}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HashTable", "HashTable\HashTable.csproj", "{F95496DF-3F94-489B-9432-1E547835B16A}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -39,6 +41,10 @@ Global
 		{8C905917-A97D-4E19-9586-BE6790AAEF57}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{8C905917-A97D-4E19-9586-BE6790AAEF57}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{8C905917-A97D-4E19-9586-BE6790AAEF57}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F95496DF-3F94-489B-9432-1E547835B16A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F95496DF-3F94-489B-9432-1E547835B16A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F95496DF-3F94-489B-9432-1E547835B16A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F95496DF-3F94-489B-9432-1E547835B16A}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
