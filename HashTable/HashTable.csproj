@@ -41,8 +41,8 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="KMostFrequentWord.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="TrappingRainWater.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

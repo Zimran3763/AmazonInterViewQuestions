@@ -9,6 +9,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using StackQueues;
 
 namespace Amazon
 {
@@ -237,10 +238,31 @@ namespace Amazon
             SearchInTwoDMatrix.SearchMatrix(matrix, 17);
             #endregion
 
+            #region Min stack
+            MinStack minStack = new MinStack();
+            minStack.Push(-2);
+            minStack.Push(0);
+            minStack.Push(-3);
+            minStack.GetMin(); // return -3
+            minStack.Pop();
+            minStack.Top();    // return 0
+            minStack.GetMin(); // return -2
+            #endregion
+            
             #region Trap rain water
             int[] height = new int[] { 0, 1, 0, 2, 1, 0, 1, 3, 2, 1, 2, 1 };
             TrappingRainWater.Trap(height);
             #endregion
+
+            #region Most Frequent Word
+            int frequncy = 2;
+            string[] wordArray = new string[]
+            {
+                "i", "love", "leetcode", "i", "love", "coding"
+            };
+            KMostFrequentWord.TopKFrequent(wordArray, frequncy);
+            #endregion
+
         }
 
     }
