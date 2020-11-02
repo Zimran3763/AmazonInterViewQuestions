@@ -3,7 +3,7 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 16
 VisualStudioVersion = 16.0.29326.143
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Amazon", "Amazon.csproj", "{89B1A6EF-213C-4C58-9BBF-3EF1096A0F4F}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Tree and Graph", "Tree and Graph.csproj", "{89B1A6EF-213C-4C58-9BBF-3EF1096A0F4F}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ArraysStrings", "Array\ArraysStrings.csproj", "{B6DF6764-5F0B-4040-81CC-B251E4768CA1}"
 EndProject

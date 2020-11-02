@@ -45,9 +45,13 @@
   <ItemGroup>
     <Compile Include="AmazonClass.cs" />
     <Compile Include="CourseTaken.cs" />
+    <Compile Include="DiameterOfTree.cs" />
     <Compile Include="Graph.cs" />
     <Compile Include="GraphIsTree.cs" />
+    <Compile Include="InOrderTraversal.cs" />
     <Compile Include="MaximumPathSumBinaryTree.cs" />
+    <Compile Include="MirrorOFATree.cs" />
+    <Compile Include="Node.cs" />
     <Compile Include="PrintItinerary.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="SerializeandDeserializeBinaryTree.cs" />

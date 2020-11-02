@@ -10,6 +10,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using StackQueues;
+using AmazonQuestions;
 
 namespace Amazon
 {
@@ -17,6 +18,21 @@ namespace Amazon
     {
         public static void Main(string[] args)
         {
+            #region Diameter of a tree
+            Node root = new Node(1);
+            root.left = new Node(2);
+            root.right = new Node(3);
+            root.left.left = new Node(4);
+            root.left.right = new Node(5);
+            int diameter = int.MinValue;
+            DiameterOfTree.height(root,diameter);
+            MirrorOFATree.Mirrorify(root);
+            InOrderTraversal.RecursiveInOrder(root);
+            InOrderTraversal.IterativeInOrder(root);
+            InOrderTraversal.IterativePostOrder(root);
+
+            #endregion
+
             #region Tree from PreOrder and InOrder
             int[] preOrder = new int[] { 1, 2, 4, 5, 3 };
             int[] inOrder = new int[] { 4, 2, 5, 1, 3 };
