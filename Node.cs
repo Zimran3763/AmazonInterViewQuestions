@@ -9,9 +9,11 @@ namespace AmazonQuestions
     public class Node
     {
         public int data;
+        public int hd;
         public Node left, right;
         public Node(int d)
         {
+            hd = int.MaxValue;
             data = d;
             left = right = null;
         }

@@ -18,20 +18,31 @@ namespace Amazon
     {
         public static void Main(string[] args)
         {
+            
             #region Diameter of a tree
             Node root = new Node(1);
             root.left = new Node(2);
             root.right = new Node(3);
             root.left.left = new Node(4);
             root.left.right = new Node(5);
+            root.left.left.left = new Node(6);
             int diameter = int.MinValue;
             DiameterOfTree.height(root,diameter);
+            #endregion
+            #region Mirror of a tree
             MirrorOFATree.Mirrorify(root);
+            #endregion
+            #region RecursiveInorder
             InOrderTraversal.RecursiveInOrder(root);
+            #endregion
             InOrderTraversal.IterativeInOrder(root);
             InOrderTraversal.IterativePostOrder(root);
-
-            #endregion
+            LeftRightView.LeftViewIterative(root);
+            LeftRightView.LeftViewRecursive(root, 1, 0);
+            TopAndBottomView.TopView(root);
+            TopAndBottomView.BottomView(root);
+            DepthOfATree.IsBalanced(root);
+            
 
             #region Tree from PreOrder and InOrder
             int[] preOrder = new int[] { 1, 2, 4, 5, 3 };
@@ -277,6 +288,31 @@ namespace Amazon
                 "i", "love", "leetcode", "i", "love", "coding"
             };
             KMostFrequentWord.TopKFrequent(wordArray, frequncy);
+            #endregion
+
+            #region Boundry traversal
+
+            #endregion
+
+            #region Print Sum of a tree
+            Node treeSum = new Node(10);
+
+            /* Constructing tree given in 
+               the above figure */
+            treeSum.left = new Node(-2);
+            treeSum.right = new Node(6);
+            treeSum.left.left = new Node(8);
+            treeSum.left.right = new Node(-4);
+            treeSum.right.left = new Node(7);
+            treeSum.right.right = new Node(5);
+
+            TreeSum.ToSumTree(treeSum);
+
+            // Print inorder traversal of the  
+            // converted tree to test result of toSumTree()  
+            Console.WriteLine("Inorder Traversal of " +
+                             "the resultant tree is:");
+            TreeSum.PrintInorderTraversal(treeSum);
             #endregion
 
         }
