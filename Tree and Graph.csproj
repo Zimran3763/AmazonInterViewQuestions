@@ -63,6 +63,7 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="SerializeandDeserializeBinaryTree.cs" />
     <Compile Include="TopAndBottomView.cs" />
+    <Compile Include="TreeAreIdentical.cs" />
     <Compile Include="TreefromPreOrdeInOrder.cs" />
     <Compile Include="TreeSum.cs" />
     <Compile Include="ZigZag.cs" />
