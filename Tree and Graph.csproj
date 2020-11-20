@@ -44,6 +44,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="AmazonClass.cs" />
+    <Compile Include="BinaryTreeIsSumTree.cs" />
     <Compile Include="BoundryTraversal.cs" />
     <Compile Include="ConvertBinaryTreeInToBST.cs" />
     <Compile Include="CourseTaken.cs" />

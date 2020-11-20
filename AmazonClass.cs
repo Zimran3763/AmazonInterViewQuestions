@@ -63,6 +63,9 @@ namespace Amazon
             MInimumNumberOfSwapToBST.InOrder(swapArray, treeArray, lengthofActualArray, 0);
             int ans = MInimumNumberOfSwapToBST.MinSwap(treeArray);
             #endregion
+            #region binaryTree is Sum tree or not
+            bool sumTree = BinaryTreeIsSumTree.TreeSum(root);
+            #endregion
 
             #region Tree from PreOrder and InOrder
             int[] preOrder = new int[] { 1, 2, 4, 5, 3 };
@@ -314,7 +317,7 @@ namespace Amazon
 
             #endregion
 
-            #region Print Sum of a tree
+            #region Print Sum tree
             Node treeSum = new Node(10);
 
             /* Constructing tree given in 
