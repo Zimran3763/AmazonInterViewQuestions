@@ -25,7 +25,7 @@ namespace AmazonQuestions
             //check if tree data is equal to left and right
             if (tree.data == leftSum + rightSum)
             {
-                if (TreeSum(tree.left) && TreeSum(tree.right)) ;
+                if (TreeSum(tree.left) && TreeSum(tree.right)) 
                 return true;
             }
             return false;

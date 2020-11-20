@@ -66,13 +66,22 @@ namespace Amazon
             #region binaryTree is Sum tree or not
             bool sumTree = BinaryTreeIsSumTree.TreeSum(root);
             #endregion
-
             #region Tree from PreOrder and InOrder
             int[] preOrder = new int[] { 1, 2, 4, 5, 3 };
             int[] inOrder = new int[] { 4, 2, 5, 1, 3 };
             int endIndex = preOrder.Length - 1;
             int startIndex = 0;
             TreefromPreOrdeInOrder.buildTree(preOrder, inOrder, startIndex, endIndex);
+            #endregion
+            #region Check if all leaf nodes are at same level or not
+            Node atree = new Node(2);
+            atree.left = new Node(7);
+            atree.right = new Node(9);
+            atree.left.left = new Node(2);
+            atree.left.right = new Node(6);
+            atree.left.right.left = new Node(5);
+            atree.left.right.right = new Node(11);
+            LeafOnSameLevel.SameLevel(atree, 1);
             #endregion
 
             #region Max Path Sum Binary Tree

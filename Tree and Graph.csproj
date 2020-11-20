@@ -53,6 +53,7 @@
     <Compile Include="Graph.cs" />
     <Compile Include="GraphIsTree.cs" />
     <Compile Include="InOrderTraversal.cs" />
+    <Compile Include="LeafOnSameLevel.cs" />
     <Compile Include="LeftRightView.cs" />
     <Compile Include="MaximumPathSumBinaryTree.cs" />
     <Compile Include="MInimumNumberOfSwapToBST.cs" />
