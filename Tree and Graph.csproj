@@ -45,6 +45,7 @@
   <ItemGroup>
     <Compile Include="AmazonClass.cs" />
     <Compile Include="BoundryTraversal.cs" />
+    <Compile Include="ConvertBinaryTreeInToBST.cs" />
     <Compile Include="CourseTaken.cs" />
     <Compile Include="DepthOfATree.cs" />
     <Compile Include="DiameterOfTree.cs" />
@@ -53,6 +54,7 @@
     <Compile Include="InOrderTraversal.cs" />
     <Compile Include="LeftRightView.cs" />
     <Compile Include="MaximumPathSumBinaryTree.cs" />
+    <Compile Include="MInimumNumberOfSwapToBST.cs" />
     <Compile Include="MirrorOFATree.cs" />
     <Compile Include="Node.cs" />
     <Compile Include="PrintItinerary.cs" />

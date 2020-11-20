@@ -18,7 +18,7 @@ namespace Amazon
     {
         public static void Main(string[] args)
         {
-            
+
             #region Diameter of a tree
             Node root = new Node(1);
             root.left = new Node(2);
@@ -27,7 +27,7 @@ namespace Amazon
             root.left.right = new Node(5);
             root.left.left.left = new Node(6);
             int diameter = int.MinValue;
-            DiameterOfTree.height(root,diameter);
+            DiameterOfTree.height(root, diameter);
             #endregion
             #region Mirror of a tree
             MirrorOFATree.Mirrorify(root);
@@ -35,14 +35,34 @@ namespace Amazon
             #region RecursiveInorder
             InOrderTraversal.RecursiveInOrder(root);
             #endregion
+            #region Iterative In Order
             InOrderTraversal.IterativeInOrder(root);
+            #endregion
+            #region IterativePostOrder
             InOrderTraversal.IterativePostOrder(root);
+            #endregion
+            #region LeftViewIterative
             LeftRightView.LeftViewIterative(root);
+            #endregion
+            #region LeftViewRecursive
             LeftRightView.LeftViewRecursive(root, 1, 0);
+            #endregion
+            #region TopView
             TopAndBottomView.TopView(root);
+            #endregion
+            #region BottomView
             TopAndBottomView.BottomView(root);
+            #endregion
+            #region IsBalanced
             DepthOfATree.IsBalanced(root);
-            
+            #endregion
+            #region Number of Swap
+            int[] swapArray = { 101, 758, 315, 730, 472, 619, 460, 479 };
+            int lengthofActualArray = swapArray.Length;
+            int[] treeArray = new int[lengthofActualArray];
+            MInimumNumberOfSwapToBST.InOrder(swapArray, treeArray, lengthofActualArray, 0);
+            int ans = MInimumNumberOfSwapToBST.MinSwap(treeArray);
+            #endregion
 
             #region Tree from PreOrder and InOrder
             int[] preOrder = new int[] { 1, 2, 4, 5, 3 };
@@ -126,7 +146,7 @@ namespace Amazon
 
             #region Three Sum 
             int[] numsArray = { -1, 0, 1, 2, -1, -4 };
-            
+
             var resArray = ThreeSum.ThreeSumArray(numsArray);
             #endregion
 
@@ -138,7 +158,7 @@ namespace Amazon
             #region Most Common Word
             //string paragraph = "Bob hit a ball, the hit BALL flew far after it was hit.";
             string paragraph = "a.";
-            string [] banned = { "a"};
+            string[] banned = { "a" };
 
             MostCommonWord.mostCommonWordSubstring(paragraph, banned);
             #endregion
@@ -172,7 +192,7 @@ namespace Amazon
             a.Next.Next.Next.Next.Next.Next = new SinglyLinkedList(7);
             a.Next.Next.Next.Next.Next.Next.Next = new SinglyLinkedList(8);
             int k = 3;
-            ReverseNodesInKGroup.ReverseKGroup(a,k);
+            ReverseNodesInKGroup.ReverseKGroup(a, k);
             #endregion
 
             #region merge two lists
@@ -224,9 +244,9 @@ namespace Amazon
             #endregion
 
             #region Sort An Array (Quick Sort)
-            int[] arry = { 1,5,4,11,20,8,2,98,90,16};
-            int n = arry.Length-1;
-            SortAnArrayQuickSort.QuickSort(arry, 0, n );
+            int[] arry = { 1, 5, 4, 11, 20, 8, 2, 98, 90, 16 };
+            int n = arry.Length - 1;
+            SortAnArrayQuickSort.QuickSort(arry, 0, n);
             Console.WriteLine("sorted array ");
             #endregion
 
@@ -247,13 +267,13 @@ namespace Amazon
              new Meeting(0,4),
              new Meeting(5,10),
              new Meeting(15,20)
-            
+
             };
             MeetingRooms.MergeRanges(meetings);
             #endregion
 
             #region Search in two d matrix
-            int[,] matrix = new int[5,5]
+            int[,] matrix = new int[5, 5]
             {
                 { 1,  4,  7,  11, 15 },
                 { 2,  5,  8,  12, 19 },
@@ -275,7 +295,7 @@ namespace Amazon
             minStack.Top();    // return 0
             minStack.GetMin(); // return -2
             #endregion
-            
+
             #region Trap rain water
             int[] height = new int[] { 0, 1, 0, 2, 1, 0, 1, 3, 2, 1, 2, 1 };
             TrappingRainWater.Trap(height);
@@ -316,6 +336,8 @@ namespace Amazon
             #endregion
 
         }
+
+      
 
     }
 }
