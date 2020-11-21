@@ -43,7 +43,6 @@
   <ItemGroup>
     <Compile Include="BinaryTreeIsSumTree.cs" />
     <Compile Include="BoundryTraversal.cs" />
-    <Compile Include="Class1.cs" />
     <Compile Include="ConvertBinaryTreeInToBST.cs" />
     <Compile Include="CourseTaken.cs" />
     <Compile Include="DepthOfATree.cs" />
