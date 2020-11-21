@@ -1,0 +1,79 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{167834BA-D391-45E3-AC56-17D1A9D08729}</ProjectGuid>
+    <OutputType>Exe</OutputType>
+    <RootNamespace>ConsoleApp</RootNamespace>
+    <AssemblyName>ConsoleApp</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="AmazonClass.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Array\ArraysStrings.csproj">
+      <Project>{b6df6764-5f0b-4040-81cc-b251e4768ca1}</Project>
+      <Name>ArraysStrings</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\HashTable\HashTable.csproj">
+      <Project>{f95496df-3f94-489b-9432-1e547835b16a}</Project>
+      <Name>HashTable</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\LinkedLists\LinkedLists.csproj">
+      <Project>{fb896c78-2128-4da5-8451-5edff062e39b}</Project>
+      <Name>LinkedLists</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\SearchSort\SearchSort.csproj">
+      <Project>{b5cc2c88-7a18-4132-804c-501afd3d0d7f}</Project>
+      <Name>SearchSort</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\StackQueues\StackQueues.csproj">
+      <Project>{8c905917-a97d-4e19-9586-be6790aaef57}</Project>
+      <Name>StackQueues</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\TreeGraph\TreeGraph.csproj">
+      <Project>{080cfed7-26c9-4b7e-9976-3799f698869c}</Project>
+      <Name>TreeGraph</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>

@@ -4,19 +4,19 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Amazon
+namespace TreeGraph
 {
     
     public class MaximumPathSumBinaryTree
     {
-        public static int  maxPath(Tree node)
+        public static int  maxPath(Node node)
         {
             var res = new Res();
             res.val = int.MinValue;
             findMaxPathSum(node, res);
             return res.val;
         }
-        public static int findMaxPathSum( Tree tree, Res res)
+        public static int findMaxPathSum( Node tree, Res res)
         
         {
             if (tree == null)
@@ -30,11 +30,11 @@ namespace Amazon
             //        10
             //    8       2
             //3      5
-            int l = findMaxPathSum(tree.Left, res);
-            int r = findMaxPathSum(tree.Right, res);
+            int l = findMaxPathSum(tree.left, res);
+            int r = findMaxPathSum(tree.right, res);
 
-            int max_single = Math.Max(Math.Max(l, r) + tree.Value, tree.Value);
-            int Max_top = Math.Max(max_single, l + r + tree.Value);
+            int max_single = Math.Max(Math.Max(l, r) + tree.data, tree.data);
+            int Max_top = Math.Max(max_single, l + r + tree.data);
             res.val = Math.Max(res.val, Max_top);
             return max_single;
         }

@@ -4,9 +4,9 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace AmazonQuestions
+namespace TreeGraph
 {
-    class SumNodeRootToLeafNode
+    class Class1
     {
     }
 }

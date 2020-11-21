@@ -1,4 +1,4 @@
-﻿using Amazon;
+﻿
 using ArraysStrings;
 using SearchSort;
 using LinkedLists;
@@ -10,11 +10,10 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using StackQueues;
-using AmazonQuestions;
-
-namespace Amazon
+using TreeGraph;
+namespace ConsoleApp
 {
-    public class AmazonClass
+    public class ClientClass
     {
         public static void Main(string[] args)
         {
@@ -85,20 +84,19 @@ namespace Amazon
             #endregion
 
             #region Max Path Sum Binary Tree
-            Tree node = new Tree(10);
-            node.Left = new Tree(2);
-            node.Left.Left = new Tree(20);
-            node.Left.Right = new Tree(1);
-            node.Right = new Tree(10);
-            node.Right.Right = new Tree(-25);
-            node.Right.Right.Left = new Tree(3);
-            node.Right.Right.Right = new Tree(4);
+            Node node = new Node(2);
+            node.left = new Node(7);
+            node.right = new Node(9);
+            node.left.left = new Node(2);
+            node.left.right = new Node(6);
+            node.left.right.left = new Node(5);
+            node.left.right.right = new Node(11);
             MaximumPathSumBinaryTree.maxPath(node);
             #endregion
 
             #region Serialize and Deserialaze Tree 
             // var serializationTree = new SerializeandDeserializeBinaryTree();
-            List<Tree> tree = SerializeandDeserializeBinaryTree.SerializeBinaryTree(node);
+            List<Node> tree = SerializeandDeserializeBinaryTree.SerializeBinaryTree(node);
             SerializeandDeserializeBinaryTree.DeserializeBinaryTree(tree);
             #endregion
 
@@ -348,8 +346,5 @@ namespace Amazon
             #endregion
 
         }
-
-      
-
     }
 }

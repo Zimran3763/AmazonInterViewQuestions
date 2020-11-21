@@ -5,7 +5,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Amazon
+namespace TreeGraph
 {
     /*
      332. Reconstruct Itinerary
@@ -29,7 +29,7 @@ namespace Amazon
                     But it is larger in lexical order. 
     */
 
-    class PrintItinerary
+    public class PrintItinerary
     {
         public static void printResult(Hashtable dataSet)
         {

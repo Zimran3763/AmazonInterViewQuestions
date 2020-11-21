@@ -4,29 +4,29 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Amazon
+namespace TreeGraph
 {
-    class SerializeandDeserializeBinaryTree
+    public class SerializeandDeserializeBinaryTree
     {
-        public static List<Tree> listOfTreeNodes = new List<Tree>();
-        public static List<Tree> SerializeBinaryTree(Tree root)
+        public static List<Node> listOfTreeNodes = new List<Node>();
+        public static List<Node> SerializeBinaryTree(Node root)
         {
             if (root == null)
             {
-                listOfTreeNodes.Add(new Tree(-1));
+                listOfTreeNodes.Add(new Node(-1));
                // return listOfTreeNodes;
             }
             else
             {
                 listOfTreeNodes.Add(root);
-                SerializeBinaryTree(root.Left);
-                SerializeBinaryTree(root.Right);
+                SerializeBinaryTree(root.left);
+                SerializeBinaryTree(root.right);
             }
            
             return listOfTreeNodes;
         }
 
-        public static Tree DeserializeBinaryTree(List<Tree> listofNodes)
+        public static Node DeserializeBinaryTree(List<Node> listofNodes)
         {
             if (listofNodes.Count <= 0)
             {
@@ -40,16 +40,16 @@ namespace Amazon
         }
 
         private static int start = 0;
-        private static void DeserializeBinaryTreeRecursion(List<Tree> listofNodes, Tree root)
+        private static void DeserializeBinaryTreeRecursion(List<Node> listofNodes, Node root)
         {
-            if (listofNodes[start].Value == -1)
+            if (listofNodes[start].data == -1)
             {
                 return;
             }
             start++;
 
-            DeserializeBinaryTreeRecursion(listofNodes, root.Left);
-            DeserializeBinaryTreeRecursion(listofNodes, root.Right);
+            DeserializeBinaryTreeRecursion(listofNodes, root.left);
+            DeserializeBinaryTreeRecursion(listofNodes, root.right);
         }
     }
 }

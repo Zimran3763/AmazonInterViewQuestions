@@ -5,36 +5,26 @@ using System.Text;
 using System.Threading.Tasks;
 
 
-namespace Amazon
+namespace TreeGraph
 {
-    public class Tree
-    {
-        public int Value { get; }
-        public Tree Right { get; set; }
-        public Tree Left { get; set; }
-        public Tree( int value)
-        {
-            Value = value;
-            Right = Left = null;
-        }
-    }
+ 
     public class TreefromPreOrdeInOrder
     {
         public static int preIndex = 0;
-        public static Tree buildTree(int[] preOrder, int[] inOrder, int startIndex, int endIndex)
+        public static Node buildTree(int[] preOrder, int[] inOrder, int startIndex, int endIndex)
         {
              
             if (startIndex > endIndex)
                 return null;
-            var rootNode = new Tree(preOrder[preIndex++]);
+            var rootNode = new Node(preOrder[preIndex++]);
 
             if (startIndex == endIndex)
                 return rootNode; 
 
-            int indexOfNode = searchOfIndexNode(inOrder, endIndex, startIndex, rootNode.Value);
+            int indexOfNode = searchOfIndexNode(inOrder, endIndex, startIndex, rootNode.data);
 
-            rootNode.Left = buildTree(preOrder, inOrder, startIndex, indexOfNode - 1);
-            rootNode.Right = buildTree(preOrder,inOrder, indexOfNode+1,endIndex);
+            rootNode.left = buildTree(preOrder, inOrder, startIndex, indexOfNode - 1);
+            rootNode.right = buildTree(preOrder,inOrder, indexOfNode+1,endIndex);
 
             return rootNode;
         }
