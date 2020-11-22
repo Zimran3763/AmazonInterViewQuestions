@@ -82,6 +82,17 @@ namespace ConsoleApp
             atree.left.right.right = new Node(11);
             LeafOnSameLevel.SameLevel(atree, 1);
             #endregion
+            #region Find largest subtree sum in a tree
+            Node subTreeSum = new Node(1);
+            subTreeSum.left = new Node(-2);
+            subTreeSum.right = new Node(3);
+            subTreeSum.left.left = new Node(4);
+            subTreeSum.left.right = new Node(5);
+            subTreeSum.right.left = new Node(-6);
+            subTreeSum.right.right = new Node(2);
+
+            FindLargestSubtreeSumInATree.findLargestSubtreeSum(subTreeSum, int.MinValue);
+            #endregion
 
             #region Max Path Sum Binary Tree
             Node node = new Node(2);

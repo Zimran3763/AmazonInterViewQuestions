@@ -47,6 +47,7 @@
     <Compile Include="CourseTaken.cs" />
     <Compile Include="DepthOfATree.cs" />
     <Compile Include="DiameterOfTree.cs" />
+    <Compile Include="FindLargestSubtreeSumInATree.cs" />
     <Compile Include="Graph.cs" />
     <Compile Include="GraphIsTree.cs" />
     <Compile Include="InOrderTraversal.cs" />

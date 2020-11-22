@@ -17,6 +17,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ConsoleApp", "ConsoleApp\Co
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TreeGraph", "TreeGraph\TreeGraph.csproj", "{080CFED7-26C9-4B7E-9976-3799F698869C}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Practice", "Practice\Practice.csproj", "{A9D6F27C-1A30-498D-A0A8-A864481BD2C7}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -51,6 +53,10 @@ Global
 		{080CFED7-26C9-4B7E-9976-3799F698869C}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{080CFED7-26C9-4B7E-9976-3799F698869C}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{080CFED7-26C9-4B7E-9976-3799F698869C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A9D6F27C-1A30-498D-A0A8-A864481BD2C7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A9D6F27C-1A30-498D-A0A8-A864481BD2C7}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A9D6F27C-1A30-498D-A0A8-A864481BD2C7}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A9D6F27C-1A30-498D-A0A8-A864481BD2C7}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
