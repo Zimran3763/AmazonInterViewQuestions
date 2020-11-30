@@ -38,6 +38,13 @@ namespace AmazonOnlineAssessment
             string[] shoppingCart = new[] { "apple", "orange", "apple", "banana", "orange", "banana" };
             int res = AmazonFreshPromotion.isWinner(codeList, shoppingCart);
             #endregion
+
+            #region Item In Conainer
+            string s1 = "|**|*|*";
+            int[] startIndices = new int[] { 1, 1 };
+            int[] endIndices = new int[] { 5, 6 };
+            ItemInContainer.NumberOfItems(s1, startIndices, endIndices);
+            #endregion
         }
 
     }
