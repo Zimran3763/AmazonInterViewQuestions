@@ -4,6 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using static AmazonOnlineAssessment.PrimeAirRoute;
+using static AmazonOnlineAssessment.LargestItemAssociation;
 
 namespace AmazonOnlineAssessment
 {
@@ -44,6 +45,25 @@ namespace AmazonOnlineAssessment
             int[] startIndices = new int[] { 1, 1 };
             int[] endIndices = new int[] { 5, 6 };
             ItemInContainer.NumberOfItems(s1, startIndices, endIndices);
+            #endregion
+
+            #region Largest Item association
+            List<PairString> itemAssociation1 = new List<PairString>()
+                        {
+                            new PairString("item1", "item2"),
+                            new PairString("item3", "item4"),
+                            new PairString("item4", "item5")
+                        };
+
+            List<PairString> itemAssociation2 = new List<PairString>()
+                        {
+                            new PairString("item1", "item2"),
+                            new PairString("item4", "item5"),
+                            new PairString("item3", "item4"),
+                            new PairString("item1", "item4")
+                        };
+
+            var ans1 = LargestItemAssociationFunction(itemAssociation1);
             #endregion
         }
 
