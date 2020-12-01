@@ -65,6 +65,14 @@ namespace AmazonOnlineAssessment
 
             var ans1 = LargestItemAssociationFunction(itemAssociation1);
             #endregion
+
+            #region turnstile
+            int[] time = new int[] { 1, 1, 3, 3, 4, 5, 6, 7, 7 };
+            int[] direction = new int[] { 1, 1, 0, 0, 0, 1, 1, 1, 1 };
+            //[1,2,3,4,5,6,7,8,9]
+
+            var ans = Turnstile.gate(time, direction);
+            #endregion
         }
 
     }
