@@ -73,6 +73,15 @@ namespace AmazonOnlineAssessment
 
             var ans = Turnstile.gate(time, direction);
             #endregion
+
+            #region five star sellers
+            int[][] rating = new int[][]
+            { new int[]{ 4, 4} ,
+              new int[]{1, 2 },
+              new int[]{3, 6}
+            };
+            var ans2 = FiveStarSellers.fiveStar(rating, 77);
+            #endregion
         }
 
     }

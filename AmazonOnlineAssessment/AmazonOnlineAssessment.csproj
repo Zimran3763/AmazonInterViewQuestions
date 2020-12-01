@@ -44,6 +44,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="AmazonFreshPromotion.cs" />
+    <Compile Include="FiveStarSellers.cs" />
     <Compile Include="ItemInContainer.cs" />
     <Compile Include="LargestItemAssociation.cs" />
     <Compile Include="OA.cs" />
