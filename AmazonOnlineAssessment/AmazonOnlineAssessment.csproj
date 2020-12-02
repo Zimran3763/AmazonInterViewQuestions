@@ -52,6 +52,7 @@
     <Compile Include="PrimeAirRoute.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="StickCost.cs" />
+    <Compile Include="TopKFrequentWord.cs" />
     <Compile Include="Turnstile.cs" />
   </ItemGroup>
   <ItemGroup>

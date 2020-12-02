@@ -94,6 +94,17 @@ namespace AmazonOnlineAssessment
             averageUtil.Add(80);
             AutoScalePolicy.finalInstance(1, averageUtil);
             #endregion
+
+            #region Top K frequent word
+            int k = 2;
+            string[] keywords = { "anacell", "cetracular", "betacellular" };
+            string[] reviews = {
+                                  "Anacell provides the best services in the city",
+                                  "betacellular has awesome services",
+                                  "Best services provided by anacell, everyone should use anacell",
+            };
+            TopKFrequentWord.getMostFrequentCommonwords(reviews, keywords, k);
+            #endregion
         }
 
     }
