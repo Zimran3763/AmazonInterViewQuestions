@@ -49,6 +49,7 @@
     <Compile Include="ItemInContainer.cs" />
     <Compile Include="LargestItemAssociation.cs" />
     <Compile Include="MostCommonWord.cs" />
+    <Compile Include="NumberOfIsland.cs" />
     <Compile Include="OA.cs" />
     <Compile Include="PrimeAirRoute.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
