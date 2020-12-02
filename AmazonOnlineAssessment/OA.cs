@@ -82,6 +82,18 @@ namespace AmazonOnlineAssessment
             };
             var ans2 = FiveStarSellers.fiveStar(rating, 77);
             #endregion
+
+            #region AutoScalePolicy
+            List<int> averageUtil = new List<int>();
+            averageUtil.Add(1);
+            averageUtil.Add(2);
+            averageUtil.Add(3);
+            averageUtil.Add(4);
+            averageUtil.Add(5);
+            averageUtil.Add(10);
+            averageUtil.Add(80);
+            AutoScalePolicy.finalInstance(1, averageUtil);
+            #endregion
         }
 
     }
