@@ -47,6 +47,7 @@
     <Compile Include="AmazonMusicPair.cs" />
     <Compile Include="AutoScalePolicy.cs" />
     <Compile Include="FiveStarSellers.cs" />
+    <Compile Include="GIftingGroupFriendCircle.cs" />
     <Compile Include="ItemInContainer.cs" />
     <Compile Include="LargestItemAssociation.cs" />
     <Compile Include="MostCommonWord.cs" />

@@ -105,6 +105,16 @@ namespace AmazonOnlineAssessment
             };
             TopKFrequentWord.getMostFrequentCommonwords(reviews, keywords, k);
             #endregion
+
+            #region Gifting Groups and Friend circle
+            int[][] friendCircle = new int[][]
+            {
+                new int []{1,1,0 },
+                new int []{1,1,0 },
+                new int []{0,0,1 }
+            };
+            GIftingGroupFriendCircle.findCircleNum(friendCircle);
+            #endregion
         }
 
     }

@@ -8,7 +8,7 @@ namespace AmazonOnlineAssessment
 {
     public class MostCommonWord
     {
-        public string MostCommonWord(string paragraph, string[] banned)
+        public string MostCommonWord1(string paragraph, string[] banned)
         {
             string result = string.Empty;
             //replace all the symbols
