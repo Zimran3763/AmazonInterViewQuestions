@@ -113,7 +113,22 @@ namespace AmazonOnlineAssessment
                 new int []{1,1,0 },
                 new int []{0,0,1 }
             };
-            GIftingGroupFriendCircle.findCircleNum(friendCircle);
+            GIftingGroupFriendCircle.FindCircleNum(friendCircle);
+            #endregion
+
+            #region K closest point to origin
+            //int[][] points = new int[][]
+            //{
+            //    new int []{3,3 },
+            //    new int []{-2,4 },
+            //    new int []{5,-1 }
+            //};
+            int[][] points1 = new int[][]
+            {
+                new int []{1,3 },
+                new int []{-2,2 }
+            };
+            KClosestPointToOrigin.KClosest(points1, 1);
             #endregion
         }
 

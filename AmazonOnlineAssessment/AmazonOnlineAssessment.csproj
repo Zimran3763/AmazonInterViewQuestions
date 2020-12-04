@@ -49,6 +49,7 @@
     <Compile Include="FiveStarSellers.cs" />
     <Compile Include="GIftingGroupFriendCircle.cs" />
     <Compile Include="ItemInContainer.cs" />
+    <Compile Include="KClosestPointToOrigin.cs" />
     <Compile Include="LargestItemAssociation.cs" />
     <Compile Include="MostCommonWord.cs" />
     <Compile Include="NumberOfIsland.cs" />
