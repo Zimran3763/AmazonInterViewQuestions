@@ -19,6 +19,17 @@ namespace AmazonOnlineAssessment
 {
     public class DistanceBetweenNodesInBST
     {
+        //insert into bst
+        public Node insertIntoBST(Node root, int val)
+        {
+            if (root == null) return new Node(val);
+
+            // insert into the right subtree
+            if (val > root.Value) root.Right = insertIntoBST(root.Right, val);
+            // insert into the left subtree
+            else root.Left = insertIntoBST(root.Left, val);
+            return root;
+        }
         #region Create BST using given array 
         public static Node buildBST(int[] nums, int node1, int node2)
         {
