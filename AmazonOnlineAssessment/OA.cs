@@ -130,6 +130,40 @@ namespace AmazonOnlineAssessment
             };
             KClosestPointToOrigin.KClosest(points1, 1);
             #endregion
+
+            #region Distance between nodes in BST
+            var arr = new int[] { 2, 1, 3 };
+            var node1 = 1;
+            var node2 = 3;
+            //Node node = new Node(2);
+
+            // DistanceBetweenNodesInBST.BuildBst(arr);
+            //var commonAncestor = DistanceBetweenNodesInBST.FindCommonAncestor(node1, node2, node);
+
+            // System.Console.WriteLine($"{DistanceBetweenNodesInBST.FindDistance(node1, commonAncestor) + DistanceBetweenNodesInBST.FindDistance(node2, commonAncestor)}");
+            #endregion
+
+            #region Substring of size k 
+            string s = "awaglknagawunagwkwagl";
+            int k1 = 4;
+            SubstringsOfSizeKWithKDistinctChars.LengthOfLongestSubstring(s, k1);
+            #region
+
+            #region Shopping patterns
+            int numOfProducts = 6;
+            List<int> products_from = new List<int>()
+            {
+                1, 2, 2, 3, 4, 5
+            };
+            List<int> products_to = new List<int>()
+            {
+                2,4,5,5,5,6
+            };
+
+            int min = ShoppingPatterns.getShoppingPatternsTrioMinimum(numOfProducts, products_from, products_to);
+
+           // int trianglesCount = ShoppingPatterns.getTriangleCount(numOfProducts, products_from, products_to);
+            #endregion
         }
 
     }
