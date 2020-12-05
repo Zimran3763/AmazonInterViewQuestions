@@ -132,22 +132,24 @@ namespace AmazonOnlineAssessment
             #endregion
 
             #region Distance between nodes in BST
-            var arr = new int[] { 2, 1, 3 };
+            var arr = new int[] { 4, 2, 7, 1, 3, 5 };
             var node1 = 1;
             var node2 = 3;
-            //Node node = new Node(2);
 
-            // DistanceBetweenNodesInBST.BuildBst(arr);
-            //var commonAncestor = DistanceBetweenNodesInBST.FindCommonAncestor(node1, node2, node);
+            //Create BST by using given array
+            DistanceBetweenNodesInBST.buildBST(arr,node1,node2);
 
-            // System.Console.WriteLine($"{DistanceBetweenNodesInBST.FindDistance(node1, commonAncestor) + DistanceBetweenNodesInBST.FindDistance(node2, commonAncestor)}");
+            //Distance between two given node
+            var commonAncestor = DistanceBetweenNodesInBST.bstDistance(arr, node1, node2);
             #endregion
 
             #region Substring of size k 
+
             string s = "awaglknagawunagwkwagl";
             int k1 = 4;
             SubstringsOfSizeKWithKDistinctChars.LengthOfLongestSubstring(s, k1);
-            #region
+
+            #endregion
 
             #region Shopping patterns
             int numOfProducts = 6;

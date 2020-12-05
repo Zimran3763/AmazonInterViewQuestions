@@ -46,6 +46,7 @@
     <Compile Include="AmazonFreshPromotion.cs" />
     <Compile Include="AmazonMusicPair.cs" />
     <Compile Include="AutoScalePolicy.cs" />
+    <Compile Include="DistanceBetweenNodesInBST.cs" />
     <Compile Include="FiveStarSellers.cs" />
     <Compile Include="GIftingGroupFriendCircle.cs" />
     <Compile Include="ItemInContainer.cs" />
@@ -56,8 +57,12 @@
     <Compile Include="OA.cs" />
     <Compile Include="PrimeAirRoute.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="RoboticsChallengeBaseBallGame.cs" />
+    <Compile Include="ShoppingPatterns.cs" />
     <Compile Include="StickCost.cs" />
+    <Compile Include="SubstringsOfSizeKWithKDistinctChars.cs" />
     <Compile Include="TopKFrequentWord.cs" />
+    <Compile Include="TransactionLog.cs" />
     <Compile Include="Turnstile.cs" />
   </ItemGroup>
   <ItemGroup>
