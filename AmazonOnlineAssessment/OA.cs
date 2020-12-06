@@ -164,7 +164,13 @@ namespace AmazonOnlineAssessment
 
             int min = ShoppingPatterns.getShoppingPatternsTrioMinimum(numOfProducts, products_from, products_to);
 
-           // int trianglesCount = ShoppingPatterns.getTriangleCount(numOfProducts, products_from, products_to);
+            // int trianglesCount = ShoppingPatterns.getTriangleCount(numOfProducts, products_from, products_to);
+            #endregion
+
+            #region Beta Testing Minimum difficulty of a job schedule
+            int[] jobDifficulty = new int[] { 11, 111, 22, 222, 33, 333, 44, 444 };
+            int d = 6;
+            BetaTesting_MinimumDifficultyOfAJobTesting.MinDifficulty(jobDifficulty, d);
             #endregion
         }
 

@@ -46,6 +46,7 @@
     <Compile Include="AmazonFreshPromotion.cs" />
     <Compile Include="AmazonMusicPair.cs" />
     <Compile Include="AutoScalePolicy.cs" />
+    <Compile Include="BetaTesting_MinimumDifficultyOfAJobTesting.cs" />
     <Compile Include="DistanceBetweenNodesInBST.cs" />
     <Compile Include="FiveStarSellers.cs" />
     <Compile Include="GIftingGroupFriendCircle.cs" />
