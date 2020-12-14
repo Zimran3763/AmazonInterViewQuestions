@@ -79,17 +79,20 @@ namespace AmazonTop50QuestionsFromLeetCode
             //put key value if key not exist
             if (!keys.ContainsKey(key))
             {
-                //in front so we would know that this is last used
+                //add linklistnode in front list so we would know that this is last used
                 keys[key] = item.AddFirst(new CacheItems(key, value));
 
                 //if dictionary is full then remove least used key
                 if (count == _capacity)
                 {
-                    //take out least used which is last in the list
+                    //take out least used linkedListNode which is last in the list
                     //we need key first to remove it from dictionary
                     // so put it in the varible and then get key and remove it from                   //dictionary then remove also from list
                     var last = item.Last;
+                    //every node has two value key and value
+                    //we would use linklistnode key to determine which ke key we need to deletefrom dictionary
                     keys.Remove(last.Value.key);
+                    //remove last from list as well
                     item.RemoveLast();
                 }
                 else
@@ -102,6 +105,7 @@ namespace AmazonTop50QuestionsFromLeetCode
                 //get the value of the key
                 var cache = keys[key];
                 //update the value of key
+                //by checking using node value
                 cache.Value.value = value;
                 //we used this key so it needs to be first in the list
                 //if value of key is not first in the list
