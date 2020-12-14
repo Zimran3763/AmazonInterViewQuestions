@@ -10,6 +10,8 @@ namespace AmazonTop50QuestionsFromLeetCode
     {
         static void Main(string[] args)
         {
+            LongestPalindromicSubstring l = new LongestPalindromicSubstring();
+            l.longestPalindrome("abacdfgdcaba");
         }
     }
 }
