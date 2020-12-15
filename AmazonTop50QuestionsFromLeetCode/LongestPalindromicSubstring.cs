@@ -17,6 +17,7 @@ namespace AmazonTop50QuestionsFromLeetCode
 {
     public class LongestPalindromicSubstring
     {
+
         public String longestPalindrome(String s)
         {
             //if null or empty return nothing
@@ -33,13 +34,33 @@ namespace AmazonTop50QuestionsFromLeetCode
                 //set new start and end index if len is greater than difference of start and end
                 if (len > end - start)
                 {
-                    //start would be current index and minus half 
+                    /*lets still try with this formula start = i - len/2
+                    start = 2 - (4/2)   // i =2, len = 4 ( abba)
+                    start = 2 -2 =0 ( wrong!)
+                    end = i + (len/2)
+                    end = 2 + 2 = 4
+                    s.substring( 0, 4+1)   // ''eabba'  --> wrong solution!!!
+                    Here start should have been 1
+                    lets recalculate start as-
+                    start = i - (len-1)/2
+                    start = 2 - (4-1)/2
+                    start = 2- 3/2
+                    start = 2 -1 = 1
+                    s.substring(1, 4+1)  // 'abba'  --> correct solution
+
+                    So you should calculate start as start = i - (len-1)/2 to take care of the case when palindrome is of 'even' length. For palindrome being 'odd' length it would not matter if start is calculated as i - (len/2) or i - (len-1)/2. */
                     start = i - (len - 1) / 2;
                     //end would be current index and plus half length
+                    // 1234321 len =7 ; index i = 3; end = 7/2 + 3= index 6
                     end = i + len / 2;
                 }
             }
-            return s.Substring(start, end + 1);
+            //we need to add one to get the length because when we substract end -           
+            //start we are not countin start index
+            //example 0123456 if start index is 1 and end index is 6 then 6-1 = 5
+            //length should be 6 instead of 5 so we add 1
+            // end -start +1
+            return s.Substring(start, end - start + 1);
         }
 
         private int expandAroundCenter(String s, int left, int right)
