@@ -43,6 +43,7 @@
   <ItemGroup>
     <Compile Include="IntegerToItsEnglishWord.cs" />
     <Compile Include="LongestPalindrom.cs" />
+    <Compile Include="MaxSumSlidingWindow.cs" />
     <Compile Include="MostCommonWord.cs" />
     <Compile Include="PossibleFeatures.cs" />
     <Compile Include="SearchSuggestionsSystem.cs" />
