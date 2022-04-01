@@ -21,7 +21,7 @@ namespace AmazonOnlineAssessment
                 //then double the instance and add 10 sec pause and move index to 10sec + 1
                 if (utilization > 60 && instance <= 2e8)
                 {
-                    instance = instance * 2;
+                    instance = instance * 2; 
                     indexSeconds = indexSeconds + 10;
                 }
                 //if utilization is less than 25 then make the instance half and add 10 sec and index would be on 10sec +1
