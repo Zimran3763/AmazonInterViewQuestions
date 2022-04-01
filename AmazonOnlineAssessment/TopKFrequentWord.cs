@@ -74,5 +74,49 @@ namespace AmazonOnlineAssessment
             //return Top k value 
             return test.Select(x => x.Key).ToArray();
         }
+
+        public static List<string> popularNFeatures(int numFeatures, int topFeatures, string [] possibleFeatures, int numFeatureRequests, string [] featureRequests)
+        {
+            var frequentWords = new List<string>();
+            var hash = new HashSet<string>();
+            var dictionary = new Dictionary<string, int>();
+
+            foreach(var str in possibleFeatures)
+            {
+                var strToLower = str.ToLower();
+                if(!hash.Contains(strToLower))
+                { 
+                    hash.Add(strToLower); 
+                }
+            }
+
+            foreach(var item in featureRequests)
+            {
+                var strAttray = item.Replace(",", " ")
+                                    .Replace(".", " ")
+                                    .Replace("!", " ")
+                                    .Replace("?", " ")
+                                    .Replace(";", " ")
+                                    .Replace("'", " ")
+                                    .ToLower()
+                                    .Split(new char[] { ' ' }, StringSplitOptions.RemoveEmptyEntries);
+
+                foreach(var feature in  new HashSet<string>(strAttray))
+                {
+                    if(hash.Contains(feature))
+                    {
+                        if(!dictionary.ContainsKey(feature))
+                        {
+                            dictionary.Add(feature, 0);
+                        }
+                        dictionary[feature]++;
+                    }
+                }
+            }
+
+                frequentWords = dictionary.OrderByDescending(x => x.Value).Select(o => o.Key).Take(topFeatures).ToList();
+
+                return frequentWords;
+        }
     }
 }

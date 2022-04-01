@@ -104,6 +104,13 @@ namespace AmazonOnlineAssessment
                                   "Best services provided by anacell, everyone should use anacell",
             };
             TopKFrequentWord.getMostFrequentCommonwords(reviews, keywords, k);
+
+            int numFeatures = 6;
+            int topFeatures = 2;
+            string [] possibleFeatures =  new []{ "storage","battery","hover","alexa","waterproof","solar"};
+            int numFeatureRequests = 7;
+            string [] featureRequests = new []{"I wish my Kindle had even more storage!","I wish the battery life on my Kindle lasted 2 years.","Tread in the bath andwould enjoy a waterproof Kindle","Waterproof and increased battery aremy top two requests.", "I want to take my Kindle into the shower.Waterproof please waterproof !", "It would be neat if my Kindle wouldhover on my desk when not in use.","How cool would it be if my Kindle charged in the sun via solar power?"};
+            TopKFrequentWord.popularNFeatures( numFeatures,  topFeatures, possibleFeatures,  numFeatureRequests,  featureRequests);
             #endregion
 
             #region Gifting Groups and Friend circle
